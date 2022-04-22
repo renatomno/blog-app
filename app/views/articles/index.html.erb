@@ -1,8 +1,8 @@
-<h2> Here goes all our articles </h2>
+<h2> Articles </h2>
 
 <% @articles.each do |article| %>
     <span>Id: </span> <%= article.id %> <br />
-    <span>Nome: </span> <%= article.title %>  <br />
+    <span>Nome:  </span> <a href="/articles/<%= article.id %>"> <%= article.title %> </a>  <br />
     <span>Descrição: </span> <%= article.body %>  <br />
     <span>Criado em: </span> <%= article.created_at %>  <br />
     <span>Atualizado em: </span> <%= article.updated_at %>  <br />
